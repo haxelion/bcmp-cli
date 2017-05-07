@@ -2,6 +2,11 @@
 name = "bcmp-cli"
 version = "0.1.0"
 authors = ["Charles Hubain <github@haxelion.eu>"]
+description = "CLI interface to the bcmp crate offering binary file comparison mechanisms"
+categories = ["algorithms"]
+homepage = "https://github.com/haxelion/bcmp-cli"
+repository = "https://github.com/haxelion/bcmp-cli"
+license = "MIT"
 
 [[bin]]
 name = "bcmp"
