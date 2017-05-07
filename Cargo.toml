@@ -1,0 +1,11 @@
+[package]
+name = "bcmp-cli"
+version = "0.1.0"
+authors = ["Charles Hubain <github@haxelion.eu>"]
+
+[[bin]]
+name = "bcmp"
+
+[dependencies]
+bcmp = "0.4"
+clap = {version = "2.24", features = ["yaml"]}

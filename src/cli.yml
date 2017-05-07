@@ -1,0 +1,84 @@
+name: bincmp
+version: "0.1.0"
+author: Charles Hubain <github@haxelion.eu>
+about: CLI interface to the bcmp crate offering binary file comparison mechanisms
+subcommands:
+    - lcs:
+        version: "0.1.0"
+        author: Charles Hubain <github@haxelion.eu>
+        about: Find the longuest common substrings between the first and second file
+        args:
+            - number:
+                short: n
+                long: number
+                value_name: NUMBER
+                help: The number of longuest common substrings to display
+                takes_value: true
+            - first_file:
+                index: 1
+                help: The first file to read data from
+                required: true
+            - second_file:
+                index: 2
+                help: The second file to read data from
+                required: true
+            - algorithm:
+                short: a
+                long: algo
+                value_name: ALGO_SPEC
+                help: "Sets the algorithm specification. A first letter indicates the algorithm: either h for HashMatch or t for TreeMatch. A number specifying the minimum match length follows it. Example: t1, h4, t7." 
+                takes_value: true 
+            - hexdump:
+                short: x
+                help: Display a hexdump of every substring
+    - us:
+        version: "0.1.0"
+        author: Charles Hubain <github@haxelion.eu>
+        about: Find the unique substrings of the second file not present in the first
+        args:
+            - number:
+                short: n
+                long: number
+                value_name: NUMBER
+                help: The number of unique substrings to display
+                takes_value: true
+            - first_file:
+                index: 1
+                help: The first file to read data from
+                required: true
+            - second_file:
+                index: 2
+                help: The second file to read data from
+                required: true
+            - algorithm:
+                short: a
+                long: algo
+                value_name: ALGO_SPEC
+                help: "Sets the algorithm specification. A first letter indicates the algorithm: either h for HashMatch or t for TreeMatch. A number specifying the minimum match length follows it. Example: t1, h4, t7."
+                takes_value: true
+            - hexdump:
+                short: x
+                help: Display a hexdump of every substring
+    - ps:
+        version: "0.1.0"
+        author: Charles Hubain <github@haxelion.eu>
+        about: Determine the patch set to build the second file from the first
+        args:
+            - first_file:
+                index: 1
+                help: The first file to read data from
+                required: true
+            - second_file:
+                index: 2
+                help: The second file to read data from
+                required: true
+            - algorithm:
+                short: a
+                long: algo
+                value_name: ALGO_SPEC
+                help: "Sets the algorithm specification. A first letter indicates the algorithm: either h for HashMatch or t for TreeMatch. A number specifying the minimum match length follows it. Example: t1, h4, t7."
+                takes_value: true
+            - hexdump:
+                short: x
+                help: Display a hexdump of every substring
+
