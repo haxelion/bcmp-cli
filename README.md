@@ -23,8 +23,9 @@ FLAGS:
     -V, --version    Prints version information
 
 OPTIONS:
-    -a, --algo <ALGO_SPEC>    Sets the algorithm specification. A first letter indicates the algorithm: either h for HashMatch or t for TreeMatch. A number specifying the
-                              minimum match length follows it. Example: t1, h4, t7.
+    -a, --algo <ALGO_SPEC>    Sets the algorithm specification. A first letter indicates the 
+                              algorithm: either h for HashMatch or t for TreeMatch. A number 
+                              specifying the minimum match length follows it. Example: t1, h4, t7.
     -n, --number <NUMBER>     The number of longuest common substrings to display
 
 ARGS:
@@ -49,8 +50,9 @@ FLAGS:
     -V, --version    Prints version information
 
 OPTIONS:
-    -a, --algo <ALGO_SPEC>    Sets the algorithm specification. A first letter indicates the algorithm: either h for HashMatch or t for TreeMatch. A number specifying the
-                              minimum match length follows it. Example: t1, h4, t7.
+    -a, --algo <ALGO_SPEC>    Sets the algorithm specification. A first letter indicates the 
+                              algorithm: either h for HashMatch or t for TreeMatch. A number 
+                              specifying the minimum match length follows it. Example: t1, h4, t7.
     -n, --number <NUMBER>     The number of unique substrings to display
 
 ARGS:
@@ -75,8 +77,9 @@ FLAGS:
     -V, --version    Prints version information
 
 OPTIONS:
-    -a, --algo <ALGO_SPEC>    Sets the algorithm specification. A first letter indicates the algorithm: either h for HashMatch or t for TreeMatch. A number specifying the
-                              minimum match length follows it. Example: t1, h4, t7.
+    -a, --algo <ALGO_SPEC>    Sets the algorithm specification. A first letter indicates the 
+                              algorithm: either h for HashMatch or t for TreeMatch. A number 
+                              specifying the minimum match length follows it. Example: t1, h4, t7.
 
 ARGS:
     <first_file>     The first file to read data from
